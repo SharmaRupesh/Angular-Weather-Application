@@ -20,7 +20,6 @@ export class WeatherService {
   getWeatherData(city: string): Observable<WeatherData>
   {
     let baseUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city +'&appid=fd84aea5b3e67c49b2a1162e663a805d&units=metric';
-    // let baseUrl = 'https://jsonplaceholder.typicode.com/users';
     return this.http.get<WeatherData>(baseUrl);
   }
 
