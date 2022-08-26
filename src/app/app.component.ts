@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 // import { environment } from 'src/environments/environment';
 import { WeatherService } from './services/weather.service';
 
@@ -9,7 +9,7 @@ import { WeatherService } from './services/weather.service';
   styleUrls: ['./app.component.css'],
   providers: [WeatherService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'weather-application';
   weatherData: any;
   cityName: string="Shimla";
@@ -25,6 +25,10 @@ export class AppComponent {
   constructor(private weatherService: WeatherService)
   {
     this.getWeatherData(this.cityName);
+  }
+
+  ngOnInit(): void {
+    
   }
 
   clearInput()

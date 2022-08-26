@@ -9,9 +9,8 @@ import { WeatherData } from '../models/weather.model';
 })
 export class WeatherService {
 
-  API_KEY = environment.API_KEY;
-  API_URL = environment.API_URL;
-
+  API_KEY = 'fd84aea5b3e67c49b2a1162e663a805d';
+  API_URL = 'https://api.openweathermap.org/data/2.5/';
 
   constructor(private http: HttpClient) {
    }
