@@ -181,4 +181,17 @@ body{
     color: var(--grey-1);
     font-size: 0.8em;
     text-align: center;
+    box-shadow: 10px 10px 10px var(--shadow-dark);
+}
+
+.search button{
+    background-color: var(--shadow-light);
+    outline: none;
+    border: none;
+    color: var(--grey-1);
+    border-radius: 20px;
+    text-align: center;
+    padding: 1em;
+    margin-left: 1em;
+    box-shadow: 10px 10px 10px var(--shadow-dark);
 }
